@@ -1,0 +1,31 @@
+{
+	"name": "@kilocode/enterprise-saas",
+	"description": "Enterprise SaaS infrastructure for multi-tenant, secure, scalable operations",
+	"version": "0.0.0",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts",
+		"./security": "./src/security/index.ts",
+		"./tenant": "./src/tenant/index.ts",
+		"./billing": "./src/billing/index.ts",
+		"./audit": "./src/audit/index.ts",
+		"./monitoring": "./src/monitoring/index.ts"
+	},
+	"scripts": {
+		"lint": "eslint src --ext=ts --max-warnings=0",
+		"check-types": "tsc --noEmit",
+		"test": "vitest run",
+		"clean": "rimraf .turbo"
+	},
+	"dependencies": {
+		"@roo-code/types": "workspace:^",
+		"zod": "^3.25.76",
+		"nanoid": "^5.0.9"
+	},
+	"devDependencies": {
+		"@roo-code/config-eslint": "workspace:^",
+		"@roo-code/config-typescript": "workspace:^",
+		"@types/node": "20.x",
+		"vitest": "^3.2.4"
+	}
+}
