@@ -45,10 +45,10 @@
 			"dependsOn": ["@kilo-code/jetbrains-host#bundle:package"]
 		},
 		"cli:build": {
-			"dependsOn": ["@kilocode/cli#build"]
+			"dependsOn": ["@devx/cli#build"]
 		},
 		"cli:bundle": {
-			"dependsOn": ["@kilocode/cli#build"]
+			"dependsOn": ["@devx/cli#build"]
 		},
 		"chromatic": {
 			"dependsOn": ["storybook:build"],
