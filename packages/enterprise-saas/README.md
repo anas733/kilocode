@@ -1,4 +1,4 @@
-# Enterprise SaaS Infrastructure
+# DevX Enterprise SaaS Infrastructure
 
 Production-grade SaaS infrastructure package for building secure, scalable, multi-tenant applications.
 
@@ -45,7 +45,7 @@ This package provides enterprise-ready capabilities for SaaS platforms:
 
 ## Modules
 
-### Security (`@kilocode/enterprise-saas/security`)
+### Security (`@devx/enterprise-saas/security`)
 
 ```typescript
 import {
@@ -56,7 +56,7 @@ import {
 	InputValidator,
 	PermissionScope,
 	Role,
-} from "@kilocode/enterprise-saas/security"
+} from "@devx/enterprise-saas/security"
 
 // API Key Management
 const keyManager = new ApiKeyManager()
@@ -85,10 +85,10 @@ const signature = signer.signRequest(payload, { secret: apiKey.keyHash })
 const verification = signer.verifySignature(payload, signature, { secret: apiKey.keyHash })
 ```
 
-### Tenant Management (`@kilocode/enterprise-saas/tenant`)
+### Tenant Management (`@devx/enterprise-saas/tenant`)
 
 ```typescript
-import { TenantManager, TenantContextManager, SubscriptionTier, TenantStatus } from "@kilocode/enterprise-saas/tenant"
+import { TenantManager, TenantContextManager, SubscriptionTier, TenantStatus } from "@devx/enterprise-saas/tenant"
 
 // Create tenant (onboarding)
 const tenantManager = new TenantManager()
@@ -110,10 +110,10 @@ await contextManager.withContext(tenant, async (context) => {
 })
 ```
 
-### Billing & Quotas (`@kilocode/enterprise-saas/billing`)
+### Billing & Quotas (`@devx/enterprise-saas/billing`)
 
 ```typescript
-import { UsageTracker, QuotaEnforcer, UsageEventType } from "@kilocode/enterprise-saas/billing"
+import { UsageTracker, QuotaEnforcer, UsageEventType } from "@devx/enterprise-saas/billing"
 
 // Track usage
 const tracker = new UsageTracker()
@@ -134,10 +134,10 @@ if (!quotaCheck.allowed) {
 const updatedTenant = enforcer.consumeApiCallQuota(tenant)
 ```
 
-### Audit Logging (`@kilocode/enterprise-saas/audit`)
+### Audit Logging (`@devx/enterprise-saas/audit`)
 
 ```typescript
-import { AuditLogger, AuditCategory, AuditSeverity, AuditActions } from "@kilocode/enterprise-saas/audit"
+import { AuditLogger, AuditCategory, AuditSeverity, AuditActions } from "@devx/enterprise-saas/audit"
 
 const auditLogger = new AuditLogger()
 
@@ -166,10 +166,10 @@ const { events } = auditLogger.query({
 const suspicious = auditLogger.detectSuspiciousActivity("tenant-123", "user-456", 1)
 ```
 
-### Monitoring (`@kilocode/enterprise-saas/monitoring`)
+### Monitoring (`@devx/enterprise-saas/monitoring`)
 
 ```typescript
-import { StructuredLogger, MetricsCollector, HealthMonitor } from "@kilocode/enterprise-saas/monitoring"
+import { StructuredLogger, MetricsCollector, HealthMonitor } from "@devx/enterprise-saas/monitoring"
 
 // Structured logging
 const logger = new StructuredLogger("api-service")
@@ -338,7 +338,7 @@ import {
 	AuditLogger,
 	StructuredLogger,
 	PermissionScope,
-} from "@kilocode/enterprise-saas"
+} from "@devx/enterprise-saas"
 
 // Initialize services
 const keyManager = new ApiKeyManager()
@@ -416,4 +416,4 @@ async function handleApiRequest(request: Request) {
 
 ## License
 
-This package is part of Kilo Code and is licensed under Apache 2.0.
+This package is part of DevX and is licensed under Apache 2.0.

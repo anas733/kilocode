@@ -1,8 +1,8 @@
-# Kilo Code - Quick Start Guide
+# DevX - Quick Start Guide
 
 ## ✅ Project Status: FULLY OPERATIONAL
 
-The Kilo Code project is successfully running with all dependencies installed, tests passing, and enterprise SaaS infrastructure ready for production.
+The DevX project is successfully running with all dependencies installed, tests passing, and enterprise SaaS infrastructure ready for production.
 
 ---
 
@@ -85,7 +85,7 @@ Location: `packages/enterprise-saas/`
 ### Usage Example
 
 ```typescript
-import { ApiKeyManager, TenantManager, QuotaEnforcer, AuditLogger, StructuredLogger } from "@kilocode/enterprise-saas"
+import { ApiKeyManager, TenantManager, QuotaEnforcer, AuditLogger, StructuredLogger } from "@devx/enterprise-saas"
 
 // Create tenant
 const tenant = tenantManager.createTenant({
@@ -116,7 +116,7 @@ const canProceed = quotaEnforcer.checkQuota(tenant.id, "API_CALLS")
 ## Project Structure
 
 ```
-kilocode/
+devx/
 ├── packages/
 │   └── enterprise-saas/        ⭐ NEW - Enterprise SaaS infrastructure
 │       ├── src/
@@ -157,7 +157,7 @@ kilocode/
 
 ## Support
 
-- **GitHub**: https://github.com/anas733/kilocode
+- **GitHub**: https://github.com/anas733/devx
 - **Discord**: https://kilo.ai/discord
 - **Docs**: See README.md and DEVELOPMENT.md
 

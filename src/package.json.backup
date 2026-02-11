@@ -1,8 +1,8 @@
 {
-	"name": "devx",
+	"name": "kilo-code",
 	"displayName": "%extension.displayName%",
 	"description": "%extension.description%",
-	"publisher": "devx",
+	"publisher": "kilocode",
 	"version": "5.4.1",
 	"icon": "assets/icons/logo-outline-black.png",
 	"galleryBanner": {
@@ -17,13 +17,13 @@
 		"workspace"
 	],
 	"author": {
-		"name": "DevX"
+		"name": "Kilo Code"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/DevX-Org/devx"
+		"url": "https://github.com/Kilo-Org/kilocode"
 	},
-	"homepage": "https://devx.ai",
+	"homepage": "https://kilo.ai",
 	"categories": [
 		"AI",
 		"Chat",
@@ -33,7 +33,7 @@
 		"Testing"
 	],
 	"keywords": [
-		"devx",
+		"kilo",
 		"claude",
 		"dev",
 		"mcp",
@@ -45,8 +45,8 @@
 		"sonnet",
 		"ai",
 		"llama",
-		"DevX",
-		"devx"
+		"Kilo Code",
+		"kilocode"
 	],
 	"activationEvents": [
 		"onLanguage",
@@ -109,7 +109,7 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "devx-ActivityBar",
+					"id": "kilo-code-ActivityBar",
 					"title": "%views.activitybar.title%",
 					"icon": "assets/icons/kilo.png",
 					"darkIcon": "assets/icons/kilo-dark.png"
@@ -117,10 +117,10 @@
 			]
 		},
 		"views": {
-			"devx-ActivityBar": [
+			"kilo-code-ActivityBar": [
 				{
 					"type": "webview",
-					"id": "devx.SidebarProvider",
+					"id": "kilo-code.SidebarProvider",
 					"name": "%views.sidebar.name%",
 					"icon": "assets/icons/kilo.png",
 					"darkIcon": "assets/icons/kilo-dark.png"
@@ -129,123 +129,123 @@
 		},
 		"commands": [
 			{
-				"command": "devx.plusButtonClicked",
+				"command": "kilo-code.plusButtonClicked",
 				"title": "%command.newTask.title%",
 				"icon": "$(add)"
 			},
 			{
-				"command": "devx.importSettings",
+				"command": "kilo-code.importSettings",
 				"title": "%command.importSettings.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.exportSettings",
+				"command": "kilo-code.exportSettings",
 				"title": "Export Settings",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.promptsButtonClicked",
+				"command": "kilo-code.promptsButtonClicked",
 				"title": "%command.prompts.title%",
 				"icon": "$(organization)"
 			},
 			{
-				"command": "devx.historyButtonClicked",
+				"command": "kilo-code.historyButtonClicked",
 				"title": "%command.history.title%",
 				"icon": "$(history)"
 			},
 			{
-				"command": "devx.marketplaceButtonClicked",
+				"command": "kilo-code.marketplaceButtonClicked",
 				"title": "%command.marketplace.title%",
 				"icon": "$(extensions)"
 			},
 			{
-				"command": "devx.popoutButtonClicked",
+				"command": "kilo-code.popoutButtonClicked",
 				"title": "%command.openInEditor.title%",
 				"icon": "$(link-external)"
 			},
 			{
-				"command": "devx.settingsButtonClicked",
+				"command": "kilo-code.settingsButtonClicked",
 				"title": "%command.settings.title%",
 				"icon": "$(settings-gear)"
 			},
 			{
-				"command": "devx.helpButtonClicked",
+				"command": "kilo-code.helpButtonClicked",
 				"title": "%command.documentation.title%",
 				"icon": "$(question)"
 			},
 			{
-				"command": "devx.openInNewTab",
+				"command": "kilo-code.openInNewTab",
 				"title": "%command.openInNewTab.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.explainCode",
+				"command": "kilo-code.explainCode",
 				"title": "%command.explainCode.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.fixCode",
+				"command": "kilo-code.fixCode",
 				"title": "%command.fixCode.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.improveCode",
+				"command": "kilo-code.improveCode",
 				"title": "%command.improveCode.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.addToContext",
+				"command": "kilo-code.addToContext",
 				"title": "%command.addToContext.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.newTask",
+				"command": "kilo-code.newTask",
 				"title": "%command.newTask.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.terminalAddToContext",
+				"command": "kilo-code.terminalAddToContext",
 				"title": "%command.terminal.addToContext.title%",
 				"category": "%extension.displayName%"
 			},
 			{
-				"command": "devx.terminalFixCommand",
+				"command": "kilo-code.terminalFixCommand",
 				"title": "%command.terminal.fixCommand.title%",
 				"category": "%extension.displayName%"
 			},
 			{
-				"command": "devx.terminalExplainCommand",
+				"command": "kilo-code.terminalExplainCommand",
 				"title": "%command.terminal.explainCommand.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.generateTerminalCommand",
+				"command": "kilo-code.generateTerminalCommand",
 				"title": "%command.terminal.generateCommand.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.setCustomStoragePath",
+				"command": "kilo-code.setCustomStoragePath",
 				"title": "%command.setCustomStoragePath.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.focusChatInput",
+				"command": "kilo-code.focusChatInput",
 				"title": "%command.focusInput.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.acceptInput",
+				"command": "kilo-code.acceptInput",
 				"title": "%command.acceptInput.title%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.profileButtonClicked",
+				"command": "kilo-code.profileButtonClicked",
 				"title": "%command.profile.title%",
 				"icon": "$(account)",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.vsc.generateCommitMessage",
+				"command": "kilo-code.vsc.generateCommitMessage",
 				"title": "%command.generateCommitMessage.title%",
 				"icon": {
 					"light": "assets/icons/kilo-light.svg",
@@ -254,48 +254,48 @@
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.ghost.generateSuggestions",
+				"command": "kilo-code.ghost.generateSuggestions",
 				"title": "%ghost.commands.generateSuggestions%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.ghost.cancelSuggestions",
+				"command": "kilo-code.ghost.cancelSuggestions",
 				"title": "%ghost.commands.cancelSuggestions%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.ghost.applyCurrentSuggestions",
+				"command": "kilo-code.ghost.applyCurrentSuggestions",
 				"title": "%ghost.commands.applyCurrentSuggestion%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.ghost.applyAllSuggestions",
+				"command": "kilo-code.ghost.applyAllSuggestions",
 				"title": "%ghost.commands.applyAllSuggestions%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.ghost.goToNextSuggestion",
+				"command": "kilo-code.ghost.goToNextSuggestion",
 				"title": "%ghost.commands.goToNextSuggestion%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.ghost.goToPreviousSuggestion",
+				"command": "kilo-code.ghost.goToPreviousSuggestion",
 				"title": "%ghost.commands.goToPreviousSuggestion%",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.agentManagerOpen",
+				"command": "kilo-code.agentManagerOpen",
 				"title": "Open Agent Manager",
 				"icon": "$(circuit-board)",
 				"category": "%configuration.title%"
 			},
 			{
-				"command": "devx.popoutButtonClicked",
+				"command": "kilo-code.popoutButtonClicked",
 				"title": "%command.openInEditor.title%",
 				"icon": "$(link-external)"
 			},
 			{
-				"command": "devx.open",
+				"command": "kilo-code.open",
 				"title": "%views.activitybar.title%",
 				"icon": {
 					"light": "assets/icons/kilo-light.svg",
@@ -306,126 +306,126 @@
 		"menus": {
 			"editor/context": [
 				{
-					"submenu": "devx.contextMenu",
+					"submenu": "kilo-code.contextMenu",
 					"group": "1"
 				}
 			],
-			"devx.contextMenu": [
+			"kilo-code.contextMenu": [
 				{
-					"command": "devx.explainCode",
+					"command": "kilo-code.explainCode",
 					"group": "1_actions@1"
 				},
 				{
-					"command": "devx.fixCode",
+					"command": "kilo-code.fixCode",
 					"group": "1_actions@2"
 				},
 				{
-					"command": "devx.improveCode",
+					"command": "kilo-code.improveCode",
 					"group": "1_actions@3"
 				},
 				{
-					"command": "devx.addToContext",
+					"command": "kilo-code.addToContext",
 					"group": "1_actions@4"
 				}
 			],
 			"terminal/context": [
 				{
-					"submenu": "devx.terminalMenu",
+					"submenu": "kilo-code.terminalMenu",
 					"group": "2"
 				}
 			],
-			"devx.terminalMenu": [
+			"kilo-code.terminalMenu": [
 				{
-					"command": "devx.terminalAddToContext",
+					"command": "kilo-code.terminalAddToContext",
 					"group": "1_actions@1"
 				},
 				{
-					"command": "devx.terminalFixCommand",
+					"command": "kilo-code.terminalFixCommand",
 					"group": "1_actions@2"
 				},
 				{
-					"command": "devx.terminalExplainCommand",
+					"command": "kilo-code.terminalExplainCommand",
 					"group": "1_actions@3"
 				}
 			],
 			"view/title": [
 				{
-					"command": "devx.plusButtonClicked",
+					"command": "kilo-code.plusButtonClicked",
 					"group": "navigation@0",
-					"when": "view == devx.SidebarProvider"
+					"when": "view == kilo-code.SidebarProvider"
 				},
 				{
-					"command": "devx.agentManagerOpen",
+					"command": "kilo-code.agentManagerOpen",
 					"group": "navigation@1",
-					"when": "view == devx.SidebarProvider"
+					"when": "view == kilo-code.SidebarProvider"
 				},
 				{
-					"command": "devx.marketplaceButtonClicked",
+					"command": "kilo-code.marketplaceButtonClicked",
 					"group": "navigation@3",
-					"when": "view == devx.SidebarProvider"
+					"when": "view == kilo-code.SidebarProvider"
 				},
 				{
-					"command": "devx.historyButtonClicked",
+					"command": "kilo-code.historyButtonClicked",
 					"group": "navigation@4",
-					"when": "view == devx.SidebarProvider"
+					"when": "view == kilo-code.SidebarProvider"
 				},
 				{
-					"command": "devx.profileButtonClicked",
+					"command": "kilo-code.profileButtonClicked",
 					"group": "navigation@5",
-					"when": "view == devx.SidebarProvider"
+					"when": "view == kilo-code.SidebarProvider"
 				},
 				{
-					"command": "devx.settingsButtonClicked",
+					"command": "kilo-code.settingsButtonClicked",
 					"group": "navigation@6",
-					"when": "view == devx.SidebarProvider"
+					"when": "view == kilo-code.SidebarProvider"
 				},
 				{
-					"command": "devx.popoutButtonClicked",
+					"command": "kilo-code.popoutButtonClicked",
 					"group": "navigation@7",
-					"when": "view == devx.SidebarProvider"
+					"when": "view == kilo-code.SidebarProvider"
 				},
 				{
-					"command": "devx.helpButtonClicked",
+					"command": "kilo-code.helpButtonClicked",
 					"group": "navigation@8",
-					"when": "false && view == devx.SidebarProvider"
+					"when": "false && view == kilo-code.SidebarProvider"
 				}
 			],
 			"editor/title": [
 				{
-					"command": "devx.plusButtonClicked",
+					"command": "kilo-code.plusButtonClicked",
 					"group": "navigation@1",
-					"when": "activeWebviewPanelId == devx.TabPanelProvider"
+					"when": "activeWebviewPanelId == kilo-code.TabPanelProvider"
 				},
 				{
-					"command": "devx.historyButtonClicked",
+					"command": "kilo-code.historyButtonClicked",
 					"group": "navigation@3",
-					"when": "activeWebviewPanelId == devx.TabPanelProvider"
+					"when": "activeWebviewPanelId == kilo-code.TabPanelProvider"
 				},
 				{
-					"command": "devx.settingsButtonClicked",
+					"command": "kilo-code.settingsButtonClicked",
 					"group": "navigation@5",
-					"when": "activeWebviewPanelId == devx.TabPanelProvider"
+					"when": "activeWebviewPanelId == kilo-code.TabPanelProvider"
 				},
 				{
-					"command": "devx.helpButtonClicked",
+					"command": "kilo-code.helpButtonClicked",
 					"group": "navigation@6",
-					"when": "activeWebviewPanelId == devx.TabPanelProvider"
+					"when": "activeWebviewPanelId == kilo-code.TabPanelProvider"
 				},
 				{
-					"command": "devx.open",
+					"command": "kilo-code.open",
 					"group": "navigation",
 					"when": "true"
 				}
 			],
 			"scm/input": [
 				{
-					"command": "devx.vsc.generateCommitMessage",
+					"command": "kilo-code.vsc.generateCommitMessage",
 					"group": "navigation"
 				}
 			],
 			"scm/title": [
 				{
-					"command": "devx.vsc.generateCommitMessage",
+					"command": "kilo-code.vsc.generateCommitMessage",
 					"when": "scmProvider == git",
 					"group": "navigation"
 				}
@@ -433,35 +433,35 @@
 		},
 		"keybindings": [
 			{
-				"command": "devx.focusChatInput",
+				"command": "kilo-code.focusChatInput",
 				"key": "ctrl+shift+a",
 				"mac": "cmd+shift+a",
 				"when": "true"
 			},
 			{
-				"command": "devx.ghost.cancelSuggestions",
+				"command": "kilo-code.ghost.cancelSuggestions",
 				"key": "escape",
-				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && devx.ghost.hasSuggestions"
+				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && kilocode.ghost.hasSuggestions"
 			},
 			{
-				"command": "devx.ghost.generateSuggestions",
+				"command": "kilo-code.ghost.generateSuggestions",
 				"key": "ctrl+l",
 				"mac": "cmd+l",
-				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && devx.ghost.enableSmartInlineTaskKeybinding && !github.copilot.completions.enabled"
+				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && kilocode.ghost.enableSmartInlineTaskKeybinding && !github.copilot.completions.enabled"
 			},
 			{
-				"command": "devx.ghost.showIncompatibilityExtensionPopup",
+				"command": "kilo-code.ghost.showIncompatibilityExtensionPopup",
 				"key": "ctrl+l",
 				"mac": "cmd+l",
-				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && devx.ghost.enableSmartInlineTaskKeybinding && github.copilot.completions.enabled"
+				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && kilocode.ghost.enableSmartInlineTaskKeybinding && github.copilot.completions.enabled"
 			},
 			{
-				"command": "devx.generateTerminalCommand",
+				"command": "kilo-code.generateTerminalCommand",
 				"key": "ctrl+shift+g",
 				"mac": "cmd+shift+g"
 			},
 			{
-				"command": "devx.addToContext",
+				"command": "kilo-code.addToContext",
 				"key": "cmd+k cmd+a",
 				"mac": "cmd+k cmd+a",
 				"win": "ctrl+k ctrl+a",
@@ -469,7 +469,7 @@
 				"when": "editorTextFocus && editorHasSelection"
 			},
 			{
-				"command": "devx.toggleAutoApprove",
+				"command": "kilo-code.toggleAutoApprove",
 				"key": "cmd+alt+a",
 				"mac": "cmd+alt+a",
 				"win": "ctrl+alt+a",
@@ -478,18 +478,18 @@
 		],
 		"submenus": [
 			{
-				"id": "devx.contextMenu",
+				"id": "kilo-code.contextMenu",
 				"label": "%views.contextMenu.label%"
 			},
 			{
-				"id": "devx.terminalMenu",
+				"id": "kilo-code.terminalMenu",
 				"label": "%views.terminalMenu.label%"
 			}
 		],
 		"configuration": {
 			"title": "%configuration.title%",
 			"properties": {
-				"devx.allowedCommands": {
+				"kilo-code.allowedCommands": {
 					"type": "array",
 					"items": {
 						"type": "string"
@@ -501,7 +501,7 @@
 					],
 					"description": "%commands.allowedCommands.description%"
 				},
-				"devx.deniedCommands": {
+				"kilo-code.deniedCommands": {
 					"type": "array",
 					"items": {
 						"type": "string"
@@ -509,14 +509,14 @@
 					"default": [],
 					"description": "%commands.deniedCommands.description%"
 				},
-				"devx.commandExecutionTimeout": {
+				"kilo-code.commandExecutionTimeout": {
 					"type": "number",
 					"default": 0,
 					"minimum": 0,
 					"maximum": 600,
 					"description": "%commands.commandExecutionTimeout.description%"
 				},
-				"devx.commandTimeoutAllowlist": {
+				"kilo-code.commandTimeoutAllowlist": {
 					"type": "array",
 					"items": {
 						"type": "string"
@@ -524,12 +524,12 @@
 					"default": [],
 					"description": "%commands.commandTimeoutAllowlist.description%"
 				},
-				"devx.preventCompletionWithOpenTodos": {
+				"kilo-code.preventCompletionWithOpenTodos": {
 					"type": "boolean",
 					"default": false,
 					"description": "%commands.preventCompletionWithOpenTodos.description%"
 				},
-				"devx.vsCodeLmModelSelector": {
+				"kilo-code.vsCodeLmModelSelector": {
 					"type": "object",
 					"properties": {
 						"vendor": {
@@ -543,58 +543,58 @@
 					},
 					"description": "%settings.vsCodeLmModelSelector.description%"
 				},
-				"devx.customStoragePath": {
+				"kilo-code.customStoragePath": {
 					"type": "string",
 					"default": "",
 					"description": "%settings.customStoragePath.description%"
 				},
-				"devx.enableCodeActions": {
+				"kilo-code.enableCodeActions": {
 					"type": "boolean",
 					"default": true,
 					"description": "%settings.enableCodeActions.description%"
 				},
-				"devx.autoImportSettingsPath": {
+				"kilo-code.autoImportSettingsPath": {
 					"type": "string",
 					"default": "",
 					"description": "%settings.autoImportSettingsPath.description%"
 				},
-				"devx.maximumIndexedFilesForFileSearch": {
+				"kilo-code.maximumIndexedFilesForFileSearch": {
 					"type": "number",
 					"default": 10000,
 					"minimum": 5000,
 					"maximum": 500000,
 					"description": "%settings.maximumIndexedFilesForFileSearch.description%"
 				},
-				"devx.useAgentRules": {
+				"kilo-code.useAgentRules": {
 					"type": "boolean",
 					"default": true,
 					"description": "%settings.useAgentRules.description%"
 				},
-				"devx.apiRequestTimeout": {
+				"kilo-code.apiRequestTimeout": {
 					"type": "number",
 					"default": 600,
 					"minimum": 0,
 					"maximum": 86400,
 					"description": "%settings.apiRequestTimeout.description%"
 				},
-				"devx.newTaskRequireTodos": {
+				"kilo-code.newTaskRequireTodos": {
 					"type": "boolean",
 					"default": false,
 					"description": "%settings.newTaskRequireTodos.description%"
 				},
-				"devx.enableSettingsSync": {
+				"kilo-code.enableSettingsSync": {
 					"type": "boolean",
 					"default": true,
 					"description": "%settings.enableSettingsSync.description%"
 				},
-				"devx.codeIndex.embeddingBatchSize": {
+				"kilo-code.codeIndex.embeddingBatchSize": {
 					"type": "number",
 					"default": 60,
 					"minimum": 1,
 					"maximum": 200,
 					"description": "%settings.codeIndex.embeddingBatchSize.description%"
 				},
-				"devx.toolProtocol": {
+				"kilo-code.toolProtocol": {
 					"type": "string",
 					"enum": [
 						"xml",
@@ -603,24 +603,24 @@
 					"default": "xml",
 					"description": "%settings.toolProtocol.description%"
 				},
-				"devx.debug": {
+				"kilo-code.debug": {
 					"type": "boolean",
 					"default": false,
 					"description": "%settings.debug.description%"
 				},
-				"devx.debugProxy.enabled": {
+				"kilo-code.debugProxy.enabled": {
 					"type": "boolean",
 					"default": false,
 					"description": "%settings.debugProxy.enabled.description%",
 					"markdownDescription": "%settings.debugProxy.enabled.description%"
 				},
-				"devx.debugProxy.serverUrl": {
+				"kilo-code.debugProxy.serverUrl": {
 					"type": "string",
 					"default": "http://127.0.0.1:8888",
 					"description": "%settings.debugProxy.serverUrl.description%",
 					"markdownDescription": "%settings.debugProxy.serverUrl.description%"
 				},
-				"devx.debugProxy.tlsInsecure": {
+				"kilo-code.debugProxy.tlsInsecure": {
 					"type": "boolean",
 					"default": false,
 					"description": "%settings.debugProxy.tlsInsecure.description%",
@@ -679,7 +679,7 @@
 		"@qdrant/js-client-rest": "^1.14.0",
 		"@roo-code/cloud": "workspace:^",
 		"@roo-code/core": "workspace:^",
-		"@devx/core-schemas": "workspace:^",
+		"@kilocode/core-schemas": "workspace:^",
 		"@roo-code/ipc": "workspace:^",
 		"@roo-code/telemetry": "workspace:^",
 		"@roo-code/types": "workspace:^",

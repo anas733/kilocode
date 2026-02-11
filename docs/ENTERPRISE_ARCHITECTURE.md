@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the architecture for transforming Kilo Code into a production-grade, enterprise-ready SaaS platform with comprehensive security, multi-tenancy, billing, and compliance capabilities.
+This document outlines the architecture for transforming DevX into a production-grade, enterprise-ready SaaS platform with comprehensive security, multi-tenancy, billing, and compliance capabilities.
 
 ## Quick Start
 
@@ -12,7 +12,7 @@ See the comprehensive README: [Enterprise SaaS Package](../packages/enterprise-s
 
 ✅ **Phase 1 Complete**: Foundation
 
-- Enterprise SaaS infrastructure package (`@kilocode/enterprise-saas`)
+- Enterprise SaaS infrastructure package (`@devx/enterprise-saas`)
 - Security primitives (API keys, RBAC, rate limiting, request signing)
 - Multi-tenancy framework (tenant lifecycle, context isolation)
 - Billing & quota management (usage tracking, enforcement)
@@ -134,7 +134,7 @@ import {
 	StructuredLogger,
 	PermissionScope,
 	SubscriptionTier,
-} from "@kilocode/enterprise-saas"
+} from "@devx/enterprise-saas"
 
 // Initialize services
 const logger = new StructuredLogger("api-service")
@@ -214,4 +214,4 @@ When contributing enterprise features:
 
 ## License
 
-This package is part of Kilo Code and is licensed under Apache 2.0.
+This package is part of DevX and is licensed under Apache 2.0.
